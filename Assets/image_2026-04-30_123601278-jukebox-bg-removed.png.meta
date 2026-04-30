@@ -1,0 +1,1580 @@
+fileFormatVersion: 2
+guid: 9626d6ac0dea15c4dad4c9cb4026559b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2077315073185418935
+    second: image_2026-04-30_123601278-jukebox-bg-removed_0
+  - first:
+      213: 8225583994606809670
+    second: image_2026-04-30_123601278-jukebox-bg-removed_1
+  - first:
+      213: 1578162138705640969
+    second: image_2026-04-30_123601278-jukebox-bg-removed_2
+  - first:
+      213: 1155960075121826250
+    second: image_2026-04-30_123601278-jukebox-bg-removed_3
+  - first:
+      213: 7001384630916955559
+    second: image_2026-04-30_123601278-jukebox-bg-removed_4
+  - first:
+      213: -4875432376749528438
+    second: image_2026-04-30_123601278-jukebox-bg-removed_5
+  - first:
+      213: 180571310384897323
+    second: image_2026-04-30_123601278-jukebox-bg-removed_6
+  - first:
+      213: 5698813558224879799
+    second: image_2026-04-30_123601278-jukebox-bg-removed_7
+  - first:
+      213: -2040434726035573789
+    second: image_2026-04-30_123601278-jukebox-bg-removed_8
+  - first:
+      213: -643177841468832180
+    second: image_2026-04-30_123601278-jukebox-bg-removed_9
+  - first:
+      213: 2958228105750111773
+    second: image_2026-04-30_123601278-jukebox-bg-removed_10
+  - first:
+      213: 2349820710186425925
+    second: image_2026-04-30_123601278-jukebox-bg-removed_11
+  - first:
+      213: 762044416202299232
+    second: image_2026-04-30_123601278-jukebox-bg-removed_12
+  - first:
+      213: 7314804984730735276
+    second: image_2026-04-30_123601278-jukebox-bg-removed_13
+  - first:
+      213: 6449608646846795867
+    second: image_2026-04-30_123601278-jukebox-bg-removed_14
+  - first:
+      213: -7183999464450414383
+    second: image_2026-04-30_123601278-jukebox-bg-removed_15
+  - first:
+      213: 4816700886266434060
+    second: image_2026-04-30_123601278-jukebox-bg-removed_16
+  - first:
+      213: -4025318695629655116
+    second: image_2026-04-30_123601278-jukebox-bg-removed_17
+  - first:
+      213: -5543051507779515421
+    second: image_2026-04-30_123601278-jukebox-bg-removed_18
+  - first:
+      213: 7850528816717787274
+    second: image_2026-04-30_123601278-jukebox-bg-removed_19
+  - first:
+      213: -5962330588397081802
+    second: image_2026-04-30_123601278-jukebox-bg-removed_20
+  - first:
+      213: 922315014148639817
+    second: image_2026-04-30_123601278-jukebox-bg-removed_21
+  - first:
+      213: -4594588269532226747
+    second: image_2026-04-30_123601278-jukebox-bg-removed_22
+  - first:
+      213: -4098528094722127555
+    second: image_2026-04-30_123601278-jukebox-bg-removed_23
+  - first:
+      213: -7898183166215207112
+    second: image_2026-04-30_123601278-jukebox-bg-removed_24
+  - first:
+      213: -4730334789000423348
+    second: image_2026-04-30_123601278-jukebox-bg-removed_25
+  - first:
+      213: -2739040511951735974
+    second: image_2026-04-30_123601278-jukebox-bg-removed_26
+  - first:
+      213: -3089761058133394647
+    second: image_2026-04-30_123601278-jukebox-bg-removed_27
+  - first:
+      213: 8826778773158421073
+    second: image_2026-04-30_123601278-jukebox-bg-removed_28
+  - first:
+      213: -1994028752273260315
+    second: image_2026-04-30_123601278-jukebox-bg-removed_29
+  - first:
+      213: -649488442007598102
+    second: image_2026-04-30_123601278-jukebox-bg-removed_30
+  - first:
+      213: -8034167940927611237
+    second: image_2026-04-30_123601278-jukebox-bg-removed_31
+  - first:
+      213: 1656901012529373809
+    second: image_2026-04-30_123601278-jukebox-bg-removed_32
+  - first:
+      213: -6097250063351766802
+    second: image_2026-04-30_123601278-jukebox-bg-removed_33
+  - first:
+      213: 9185137499683966709
+    second: image_2026-04-30_123601278-jukebox-bg-removed_34
+  - first:
+      213: 960664124757515954
+    second: image_2026-04-30_123601278-jukebox-bg-removed_35
+  - first:
+      213: -8593625958797580617
+    second: image_2026-04-30_123601278-jukebox-bg-removed_36
+  - first:
+      213: -68054896382508360
+    second: image_2026-04-30_123601278-jukebox-bg-removed_37
+  - first:
+      213: 7215407990349306994
+    second: image_2026-04-30_123601278-jukebox-bg-removed_38
+  - first:
+      213: 1846102917723444656
+    second: image_2026-04-30_123601278-jukebox-bg-removed_39
+  - first:
+      213: -949883474397388875
+    second: image_2026-04-30_123601278-jukebox-bg-removed_40
+  - first:
+      213: 1952353122854532519
+    second: image_2026-04-30_123601278-jukebox-bg-removed_41
+  - first:
+      213: 3071544221429881347
+    second: image_2026-04-30_123601278-jukebox-bg-removed_42
+  - first:
+      213: -8679653414628616279
+    second: image_2026-04-30_123601278-jukebox-bg-removed_43
+  - first:
+      213: 1710669406358905236
+    second: image_2026-04-30_123601278-jukebox-bg-removed_44
+  - first:
+      213: 1462110795458865327
+    second: image_2026-04-30_123601278-jukebox-bg-removed_45
+  - first:
+      213: -2646487576904838869
+    second: image_2026-04-30_123601278-jukebox-bg-removed_46
+  - first:
+      213: 7606526088599384527
+    second: image_2026-04-30_123601278-jukebox-bg-removed_47
+  - first:
+      213: 4949331250071154640
+    second: image_2026-04-30_123601278-jukebox-bg-removed_48
+  - first:
+      213: 8900120361013023695
+    second: image_2026-04-30_123601278-jukebox-bg-removed_49
+  - first:
+      213: 4746919430978481235
+    second: image_2026-04-30_123601278-jukebox-bg-removed_50
+  - first:
+      213: -8867854046786683836
+    second: image_2026-04-30_123601278-jukebox-bg-removed_51
+  - first:
+      213: -4687728247694035306
+    second: image_2026-04-30_123601278-jukebox-bg-removed_52
+  - first:
+      213: 40138215549719514
+    second: image_2026-04-30_123601278-jukebox-bg-removed_53
+  - first:
+      213: -3378547455389404890
+    second: image_2026-04-30_123601278-jukebox-bg-removed_54
+  - first:
+      213: 6887262052968230152
+    second: image_2026-04-30_123601278-jukebox-bg-removed_55
+  - first:
+      213: 7936989889358468322
+    second: image_2026-04-30_123601278-jukebox-bg-removed_56
+  - first:
+      213: 7054929189889364407
+    second: image_2026-04-30_123601278-jukebox-bg-removed_57
+  - first:
+      213: -5553721833665042274
+    second: image_2026-04-30_123601278-jukebox-bg-removed_58
+  - first:
+      213: -8956929257866614694
+    second: image_2026-04-30_123601278-jukebox-bg-removed_59
+  - first:
+      213: 4363416620109112245
+    second: image_2026-04-30_123601278-jukebox-bg-removed_60
+  - first:
+      213: 8897925834423991731
+    second: image_2026-04-30_123601278-jukebox-bg-removed_61
+  - first:
+      213: -528839847200904935
+    second: image_2026-04-30_123601278-jukebox-bg-removed_62
+  - first:
+      213: 4729329832688793705
+    second: image_2026-04-30_123601278-jukebox-bg-removed_63
+  - first:
+      213: 1183522897631336712
+    second: image_2026-04-30_123601278-jukebox-bg-removed_64
+  - first:
+      213: -1590349224559087746
+    second: image_2026-04-30_123601278-jukebox-bg-removed_65
+  - first:
+      213: -1905367506820192304
+    second: image_2026-04-30_123601278-jukebox-bg-removed_66
+  - first:
+      213: 283901364811447411
+    second: image_2026-04-30_123601278-jukebox-bg-removed_67
+  - first:
+      213: -7652939244208644775
+    second: image_2026-04-30_123601278-jukebox-bg-removed_68
+  - first:
+      213: 5085789474628381372
+    second: image_2026-04-30_123601278-jukebox-bg-removed_69
+  - first:
+      213: -12723259416852140
+    second: image_2026-04-30_123601278-jukebox-bg-removed_70
+  - first:
+      213: -3470548939349761201
+    second: image_2026-04-30_123601278-jukebox-bg-removed_71
+  - first:
+      213: 6564355832614674990
+    second: image_2026-04-30_123601278-jukebox-bg-removed_72
+  - first:
+      213: 5961954287215782696
+    second: image_2026-04-30_123601278-jukebox-bg-removed_73
+  - first:
+      213: 1588285590680758511
+    second: image_2026-04-30_123601278-jukebox-bg-removed_74
+  - first:
+      213: -5357291014863848565
+    second: image_2026-04-30_123601278-jukebox-bg-removed_75
+  - first:
+      213: -8007449594515716662
+    second: image_2026-04-30_123601278-jukebox-bg-removed_76
+  - first:
+      213: -2787042864191403207
+    second: image_2026-04-30_123601278-jukebox-bg-removed_77
+  - first:
+      213: -4309250028257476721
+    second: image_2026-04-30_123601278-jukebox-bg-removed_78
+  - first:
+      213: 1730123519891543351
+    second: image_2026-04-30_123601278-jukebox-bg-removed_79
+  - first:
+      213: -2903889971598082840
+    second: image_2026-04-30_123601278-jukebox-bg-removed_80
+  - first:
+      213: 1016406524949998892
+    second: image_2026-04-30_123601278-jukebox-bg-removed_81
+  - first:
+      213: 587911256097969395
+    second: image_2026-04-30_123601278-jukebox-bg-removed_82
+  - first:
+      213: -8929873949927640421
+    second: image_2026-04-30_123601278-jukebox-bg-removed_83
+  - first:
+      213: -3081564230592207032
+    second: image_2026-04-30_123601278-jukebox-bg-removed_84
+  - first:
+      213: 7114318774965120204
+    second: image_2026-04-30_123601278-jukebox-bg-removed_85
+  - first:
+      213: 7041063376451964234
+    second: image_2026-04-30_123601278-jukebox-bg-removed_86
+  - first:
+      213: -8090923963393428416
+    second: image_2026-04-30_123601278-jukebox-bg-removed_87
+  - first:
+      213: -1058811148837071975
+    second: image_2026-04-30_123601278-jukebox-bg-removed_88
+  - first:
+      213: -1237969542801665090
+    second: image_2026-04-30_123601278-jukebox-bg-removed_89
+  - first:
+      213: 4662004061570842690
+    second: image_2026-04-30_123601278-jukebox-bg-removed_90
+  - first:
+      213: -1201379509183529698
+    second: image_2026-04-30_123601278-jukebox-bg-removed_91
+  - first:
+      213: -5775885619303805054
+    second: image_2026-04-30_123601278-jukebox-bg-removed_92
+  - first:
+      213: 390029405131199277
+    second: image_2026-04-30_123601278-jukebox-bg-removed_93
+  - first:
+      213: -8563534192478426809
+    second: image_2026-04-30_123601278-jukebox-bg-removed_94
+  - first:
+      213: 5007336517888993409
+    second: image_2026-04-30_123601278-jukebox-bg-removed_95
+  - first:
+      213: -2048970843871184922
+    second: image_2026-04-30_123601278-jukebox-bg-removed_96
+  - first:
+      213: 2585669653235378706
+    second: image_2026-04-30_123601278-jukebox-bg-removed_97
+  - first:
+      213: 8170066132031161961
+    second: image_2026-04-30_123601278-jukebox-bg-removed_98
+  - first:
+      213: -334062824762495076
+    second: image_2026-04-30_123601278-jukebox-bg-removed_99
+  - first:
+      213: 4192531161799536746
+    second: image_2026-04-30_123601278-jukebox-bg-removed_100
+  - first:
+      213: -271348775398690204
+    second: image_2026-04-30_123601278-jukebox-bg-removed_101
+  - first:
+      213: 5379838375088864660
+    second: image_2026-04-30_123601278-jukebox-bg-removed_102
+  - first:
+      213: 3281118681283102104
+    second: image_2026-04-30_123601278-jukebox-bg-removed_103
+  - first:
+      213: 1849369375956762520
+    second: image_2026-04-30_123601278-jukebox-bg-removed_104
+  - first:
+      213: -8516533057367747720
+    second: image_2026-04-30_123601278-jukebox-bg-removed_105
+  - first:
+      213: -4238363446352996048
+    second: image_2026-04-30_123601278-jukebox-bg-removed_106
+  - first:
+      213: -8160962897125804101
+    second: image_2026-04-30_123601278-jukebox-bg-removed_107
+  - first:
+      213: -2299483776618028207
+    second: image_2026-04-30_123601278-jukebox-bg-removed_108
+  - first:
+      213: -123669050661641580
+    second: image_2026-04-30_123601278-jukebox-bg-removed_109
+  - first:
+      213: -8442926986397645231
+    second: image_2026-04-30_123601278-jukebox-bg-removed_110
+  - first:
+      213: 8632053103489354310
+    second: image_2026-04-30_123601278-jukebox-bg-removed_111
+  - first:
+      213: 2045052726681951374
+    second: image_2026-04-30_123601278-jukebox-bg-removed_112
+  - first:
+      213: -2819487092081615263
+    second: image_2026-04-30_123601278-jukebox-bg-removed_113
+  - first:
+      213: 6735810555445233476
+    second: image_2026-04-30_123601278-jukebox-bg-removed_114
+  - first:
+      213: 1989544852325277194
+    second: image_2026-04-30_123601278-jukebox-bg-removed_115
+  - first:
+      213: 4777988586114606738
+    second: image_2026-04-30_123601278-jukebox-bg-removed_116
+  - first:
+      213: 6809286404614903432
+    second: image_2026-04-30_123601278-jukebox-bg-removed_117
+  - first:
+      213: 2660382090678877133
+    second: image_2026-04-30_123601278-jukebox-bg-removed_118
+  - first:
+      213: -996879200410295774
+    second: image_2026-04-30_123601278-jukebox-bg-removed_119
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_25
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 504
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4815f062997a5eb0800000000000000
+      internalID: -4730334789000423348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_29
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 503
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e046d42a69c354e0800000000000000
+      internalID: -1994028752273260315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 334
+        width: 85
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e9d2713d6e08090800000000000000
+      internalID: -8034167940927611237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_32
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 404
+        width: 100
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1726cc731be7ef610800000000000000
+      internalID: 1656901012529373809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_33
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 403
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0a03b3f57326ba0800000000000000
+      internalID: -6097250063351766802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_34
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 404
+        width: 51
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe48c914e9287f70800000000000000
+      internalID: 9185137499683966709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_35
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 404
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be12a08ee6f45d00800000000000000
+      internalID: 960664124757515954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_36
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 403
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b66b41b8be4db880800000000000000
+      internalID: -8593625958797580617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 404
+        width: 43
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b205ebae683e0ff0800000000000000
+      internalID: -68054896382508360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_38
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 407
+        width: 48
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c194e9657422460800000000000000
+      internalID: 7215407990349306994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_39
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 404
+        width: 41
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5d7b592dcae9910800000000000000
+      internalID: 1846102917723444656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_40
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 405
+        width: 46
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf9782430651d2f0800000000000000
+      internalID: -949883474397388875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_41
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 404
+        width: 40
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a57edb32d6281b10800000000000000
+      internalID: 1952353122854532519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_48
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 293
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df2b3c9c8e8fa440800000000000000
+      internalID: 4949331250071154640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_54
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 283
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621f6b85dfcfc11d0800000000000000
+      internalID: -3378547455389404890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_57
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 282
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1d3e638b428e160800000000000000
+      internalID: 7054929189889364407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_58
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 282
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98601bca673de2b0800000000000000
+      internalID: -5553721833665042274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_59
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 283
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58ae8abb4892b380800000000000000
+      internalID: -8956929257866614694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_60
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 283
+        width: 47
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3a3a03c48fd8c30800000000000000
+      internalID: 4363416620109112245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_61
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 283
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdfc963768cb7b70800000000000000
+      internalID: 8897925834423991731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_62
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 283
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919a48cf5fe29a8f0800000000000000
+      internalID: -528839847200904935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_63
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 283
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968b21ffc64f1a140800000000000000
+      internalID: 4729329832688793705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_64
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 283
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8095bd80ec7bc6010800000000000000
+      internalID: 1183522897631336712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_67
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 183
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cb5d089ce90f300800000000000000
+      internalID: 283901364811447411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_80
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 162
+        width: 55
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecb310d47f43b7d0800000000000000
+      internalID: -2903889971598082840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_81
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 162
+        width: 55
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2da80b69500b1e00800000000000000
+      internalID: 1016406524949998892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_82
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 162
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f45c2b2c2ea82800800000000000000
+      internalID: 587911256097969395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_83
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 162
+        width: 85
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b927c8d74f6b21480800000000000000
+      internalID: -8929873949927640421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_84
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 162
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847600bb8a51c35d0800000000000000
+      internalID: -3081564230592207032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_85
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 162
+        width: 61
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc20b88b332bb260800000000000000
+      internalID: 7114318774965120204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_86
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 162
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d8e62f5d1e6b160800000000000000
+      internalID: 7041063376451964234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_87
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 162
+        width: 63
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0443d39d58347bf80800000000000000
+      internalID: -8090923963393428416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_88
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 179
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993d755bed85e41f0800000000000000
+      internalID: -1058811148837071975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_89
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 163
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3dd868249d1dee0800000000000000
+      internalID: -1237969542801665090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_102
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 43
+        width: 58
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dbf20af7609aa40800000000000000
+      internalID: 5379838375088864660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_103
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 31
+        width: 70
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89507c77e00e88d20800000000000000
+      internalID: 3281118681283102104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_104
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 72
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f736826a74aa910800000000000000
+      internalID: 1849369375956762520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_105
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 31
+        width: 58
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87359bd8e423fc980800000000000000
+      internalID: -8516533057367747720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_106
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 31
+        width: 73
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039112fb6ee4e25c0800000000000000
+      internalID: -4238363446352996048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_107
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 35
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb77ca3db7f6ebe80800000000000000
+      internalID: -8160962897125804101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_108
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 33
+        width: 92
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153a8e730b79610e0800000000000000
+      internalID: -2299483776618028207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_109
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 43
+        width: 93
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4926a9557a3a84ef0800000000000000
+      internalID: -123669050661641580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_110
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 50
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156853f63a2b4da80800000000000000
+      internalID: -8442926986397645231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image_2026-04-30_123601278-jukebox-bg-removed_111
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 50
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a8ac320963bc770800000000000000
+      internalID: 8632053103489354310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b45a977ac32cedd46b27eb963faf8d5b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      image_2026-04-30_123601278-jukebox-bg-removed_0: -2077315073185418935
+      image_2026-04-30_123601278-jukebox-bg-removed_1: 8225583994606809670
+      image_2026-04-30_123601278-jukebox-bg-removed_10: 2958228105750111773
+      image_2026-04-30_123601278-jukebox-bg-removed_100: 4192531161799536746
+      image_2026-04-30_123601278-jukebox-bg-removed_101: -271348775398690204
+      image_2026-04-30_123601278-jukebox-bg-removed_102: 5379838375088864660
+      image_2026-04-30_123601278-jukebox-bg-removed_103: 3281118681283102104
+      image_2026-04-30_123601278-jukebox-bg-removed_104: 1849369375956762520
+      image_2026-04-30_123601278-jukebox-bg-removed_105: -8516533057367747720
+      image_2026-04-30_123601278-jukebox-bg-removed_106: -4238363446352996048
+      image_2026-04-30_123601278-jukebox-bg-removed_107: -8160962897125804101
+      image_2026-04-30_123601278-jukebox-bg-removed_108: -2299483776618028207
+      image_2026-04-30_123601278-jukebox-bg-removed_109: -123669050661641580
+      image_2026-04-30_123601278-jukebox-bg-removed_11: 2349820710186425925
+      image_2026-04-30_123601278-jukebox-bg-removed_110: -8442926986397645231
+      image_2026-04-30_123601278-jukebox-bg-removed_111: 8632053103489354310
+      image_2026-04-30_123601278-jukebox-bg-removed_112: 2045052726681951374
+      image_2026-04-30_123601278-jukebox-bg-removed_113: -2819487092081615263
+      image_2026-04-30_123601278-jukebox-bg-removed_114: 6735810555445233476
+      image_2026-04-30_123601278-jukebox-bg-removed_115: 1989544852325277194
+      image_2026-04-30_123601278-jukebox-bg-removed_116: 4777988586114606738
+      image_2026-04-30_123601278-jukebox-bg-removed_117: 6809286404614903432
+      image_2026-04-30_123601278-jukebox-bg-removed_118: 2660382090678877133
+      image_2026-04-30_123601278-jukebox-bg-removed_119: -996879200410295774
+      image_2026-04-30_123601278-jukebox-bg-removed_12: 762044416202299232
+      image_2026-04-30_123601278-jukebox-bg-removed_13: 7314804984730735276
+      image_2026-04-30_123601278-jukebox-bg-removed_14: 6449608646846795867
+      image_2026-04-30_123601278-jukebox-bg-removed_15: -7183999464450414383
+      image_2026-04-30_123601278-jukebox-bg-removed_16: 4816700886266434060
+      image_2026-04-30_123601278-jukebox-bg-removed_17: -4025318695629655116
+      image_2026-04-30_123601278-jukebox-bg-removed_18: -5543051507779515421
+      image_2026-04-30_123601278-jukebox-bg-removed_19: 7850528816717787274
+      image_2026-04-30_123601278-jukebox-bg-removed_2: 1578162138705640969
+      image_2026-04-30_123601278-jukebox-bg-removed_20: -5962330588397081802
+      image_2026-04-30_123601278-jukebox-bg-removed_21: 922315014148639817
+      image_2026-04-30_123601278-jukebox-bg-removed_22: -4594588269532226747
+      image_2026-04-30_123601278-jukebox-bg-removed_23: -4098528094722127555
+      image_2026-04-30_123601278-jukebox-bg-removed_24: -7898183166215207112
+      image_2026-04-30_123601278-jukebox-bg-removed_25: -4730334789000423348
+      image_2026-04-30_123601278-jukebox-bg-removed_26: -2739040511951735974
+      image_2026-04-30_123601278-jukebox-bg-removed_27: -3089761058133394647
+      image_2026-04-30_123601278-jukebox-bg-removed_28: 8826778773158421073
+      image_2026-04-30_123601278-jukebox-bg-removed_29: -1994028752273260315
+      image_2026-04-30_123601278-jukebox-bg-removed_3: 1155960075121826250
+      image_2026-04-30_123601278-jukebox-bg-removed_30: -649488442007598102
+      image_2026-04-30_123601278-jukebox-bg-removed_31: -8034167940927611237
+      image_2026-04-30_123601278-jukebox-bg-removed_32: 1656901012529373809
+      image_2026-04-30_123601278-jukebox-bg-removed_33: -6097250063351766802
+      image_2026-04-30_123601278-jukebox-bg-removed_34: 9185137499683966709
+      image_2026-04-30_123601278-jukebox-bg-removed_35: 960664124757515954
+      image_2026-04-30_123601278-jukebox-bg-removed_36: -8593625958797580617
+      image_2026-04-30_123601278-jukebox-bg-removed_37: -68054896382508360
+      image_2026-04-30_123601278-jukebox-bg-removed_38: 7215407990349306994
+      image_2026-04-30_123601278-jukebox-bg-removed_39: 1846102917723444656
+      image_2026-04-30_123601278-jukebox-bg-removed_4: 7001384630916955559
+      image_2026-04-30_123601278-jukebox-bg-removed_40: -949883474397388875
+      image_2026-04-30_123601278-jukebox-bg-removed_41: 1952353122854532519
+      image_2026-04-30_123601278-jukebox-bg-removed_42: 3071544221429881347
+      image_2026-04-30_123601278-jukebox-bg-removed_43: -8679653414628616279
+      image_2026-04-30_123601278-jukebox-bg-removed_44: 1710669406358905236
+      image_2026-04-30_123601278-jukebox-bg-removed_45: 1462110795458865327
+      image_2026-04-30_123601278-jukebox-bg-removed_46: -2646487576904838869
+      image_2026-04-30_123601278-jukebox-bg-removed_47: 7606526088599384527
+      image_2026-04-30_123601278-jukebox-bg-removed_48: 4949331250071154640
+      image_2026-04-30_123601278-jukebox-bg-removed_49: 8900120361013023695
+      image_2026-04-30_123601278-jukebox-bg-removed_5: -4875432376749528438
+      image_2026-04-30_123601278-jukebox-bg-removed_50: 4746919430978481235
+      image_2026-04-30_123601278-jukebox-bg-removed_51: -8867854046786683836
+      image_2026-04-30_123601278-jukebox-bg-removed_52: -4687728247694035306
+      image_2026-04-30_123601278-jukebox-bg-removed_53: 40138215549719514
+      image_2026-04-30_123601278-jukebox-bg-removed_54: -3378547455389404890
+      image_2026-04-30_123601278-jukebox-bg-removed_55: 6887262052968230152
+      image_2026-04-30_123601278-jukebox-bg-removed_56: 7936989889358468322
+      image_2026-04-30_123601278-jukebox-bg-removed_57: 7054929189889364407
+      image_2026-04-30_123601278-jukebox-bg-removed_58: -5553721833665042274
+      image_2026-04-30_123601278-jukebox-bg-removed_59: -8956929257866614694
+      image_2026-04-30_123601278-jukebox-bg-removed_6: 180571310384897323
+      image_2026-04-30_123601278-jukebox-bg-removed_60: 4363416620109112245
+      image_2026-04-30_123601278-jukebox-bg-removed_61: 8897925834423991731
+      image_2026-04-30_123601278-jukebox-bg-removed_62: -528839847200904935
+      image_2026-04-30_123601278-jukebox-bg-removed_63: 4729329832688793705
+      image_2026-04-30_123601278-jukebox-bg-removed_64: 1183522897631336712
+      image_2026-04-30_123601278-jukebox-bg-removed_65: -1590349224559087746
+      image_2026-04-30_123601278-jukebox-bg-removed_66: -1905367506820192304
+      image_2026-04-30_123601278-jukebox-bg-removed_67: 283901364811447411
+      image_2026-04-30_123601278-jukebox-bg-removed_68: -7652939244208644775
+      image_2026-04-30_123601278-jukebox-bg-removed_69: 5085789474628381372
+      image_2026-04-30_123601278-jukebox-bg-removed_7: 5698813558224879799
+      image_2026-04-30_123601278-jukebox-bg-removed_70: -12723259416852140
+      image_2026-04-30_123601278-jukebox-bg-removed_71: -3470548939349761201
+      image_2026-04-30_123601278-jukebox-bg-removed_72: 6564355832614674990
+      image_2026-04-30_123601278-jukebox-bg-removed_73: 5961954287215782696
+      image_2026-04-30_123601278-jukebox-bg-removed_74: 1588285590680758511
+      image_2026-04-30_123601278-jukebox-bg-removed_75: -5357291014863848565
+      image_2026-04-30_123601278-jukebox-bg-removed_76: -8007449594515716662
+      image_2026-04-30_123601278-jukebox-bg-removed_77: -2787042864191403207
+      image_2026-04-30_123601278-jukebox-bg-removed_78: -4309250028257476721
+      image_2026-04-30_123601278-jukebox-bg-removed_79: 1730123519891543351
+      image_2026-04-30_123601278-jukebox-bg-removed_8: -2040434726035573789
+      image_2026-04-30_123601278-jukebox-bg-removed_80: -2903889971598082840
+      image_2026-04-30_123601278-jukebox-bg-removed_81: 1016406524949998892
+      image_2026-04-30_123601278-jukebox-bg-removed_82: 587911256097969395
+      image_2026-04-30_123601278-jukebox-bg-removed_83: -8929873949927640421
+      image_2026-04-30_123601278-jukebox-bg-removed_84: -3081564230592207032
+      image_2026-04-30_123601278-jukebox-bg-removed_85: 7114318774965120204
+      image_2026-04-30_123601278-jukebox-bg-removed_86: 7041063376451964234
+      image_2026-04-30_123601278-jukebox-bg-removed_87: -8090923963393428416
+      image_2026-04-30_123601278-jukebox-bg-removed_88: -1058811148837071975
+      image_2026-04-30_123601278-jukebox-bg-removed_89: -1237969542801665090
+      image_2026-04-30_123601278-jukebox-bg-removed_9: -643177841468832180
+      image_2026-04-30_123601278-jukebox-bg-removed_90: 4662004061570842690
+      image_2026-04-30_123601278-jukebox-bg-removed_91: -1201379509183529698
+      image_2026-04-30_123601278-jukebox-bg-removed_92: -5775885619303805054
+      image_2026-04-30_123601278-jukebox-bg-removed_93: 390029405131199277
+      image_2026-04-30_123601278-jukebox-bg-removed_94: -8563534192478426809
+      image_2026-04-30_123601278-jukebox-bg-removed_95: 5007336517888993409
+      image_2026-04-30_123601278-jukebox-bg-removed_96: -2048970843871184922
+      image_2026-04-30_123601278-jukebox-bg-removed_97: 2585669653235378706
+      image_2026-04-30_123601278-jukebox-bg-removed_98: 8170066132031161961
+      image_2026-04-30_123601278-jukebox-bg-removed_99: -334062824762495076
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
