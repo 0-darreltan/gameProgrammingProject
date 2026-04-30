@@ -1,21 +1,26 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Settings Gerakan")]
     public float moveSpeed = 8f;
     public float jumpForce = 12f;
-    
+
+    [Header("Timing (Anticipation & Recovery)")]
+    public float jumpStartDelay = 0.15f; // Jeda jumpStart (jongkok)
+    public float landRecoveryTime = 0.2f; // Jeda jumpEnd (mendarat)
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator anim;
     
     private float moveInput;
     private bool isGrounded;
+    private bool canMove = true; 
 
     void Start()
     {
-        // Mengambil semua komponen yang dibutuhkan dari karakter
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -23,46 +28,90 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // 1. Ambil input kiri/kanan (A/D atau Panah)
+        // 1. Jika sedang ancang-ancang atau mendarat, kunci gerakan
+        if (!canMove) 
+        {
+            moveInput = 0;
+            anim.SetBool("isWalking", false);
+            return; 
+        }
+
+        // 2. Ambil Input Jalan
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // 2. Kontrol Animasi
-        // Jika moveInput tidak 0 (artinya kita tekan tombol), maka isWalking jadi true
-        if (moveInput != 0) {
-            anim.SetBool("isWalking", true);
-        } else {
-            anim.SetBool("isWalking", false);
-        }
+        // 3. Atur Animasi Jalan & Flip
+        anim.SetBool("isWalking", moveInput != 0);
+        
+        if (moveInput > 0) spriteRenderer.flipX = false;
+        else if (moveInput < 0) spriteRenderer.flipX = true;
 
-        // 3. Membalik arah karakter (Flip)
-        if (moveInput > 0) {
-            spriteRenderer.flipX = false; // Hadap Kanan
-        } else if (moveInput < 0) {
-            spriteRenderer.flipX = true; // Hadap Kiri
-        }
-
-        // 4. Melompat (Tombol Spasi)
+        // 4. Input Lompat
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            // Unity 6 menggunakan linearVelocity
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            StartCoroutine(JumpSequence());
         }
+
+        // 5. Update Parameter Animator
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
     void FixedUpdate()
     {
-        // Menjalankan gerakan fisik karakter
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // Gerakkan karakter hanya jika canMove = true
+        if (canMove)
+        {
+            rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        }
     }
 
-    // Deteksi apakah kaki menyentuh lantai (agar tidak bisa lompat di udara)
+    // --- PROSES LOMPAT (Antisipasi) ---
+    IEnumerator JumpSequence()
+    {
+        canMove = false; 
+        rb.linearVelocity = Vector2.zero; // Berhenti total saat jongkok
+        
+        anim.SetTrigger("startJump"); // Mainkan jumpStart
+        
+        yield return new WaitForSeconds(jumpStartDelay);
+        
+        // Meluncur ke atas
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        canMove = true; 
+    }
+
+    // --- DETEKSI MENDARAT ---
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isGrounded = true;
+        // Pastikan objek lantai di-tag "Ground"
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            if (!isGrounded) // Hanya panggil saat baru saja mendarat
+            {
+                isGrounded = true;
+                anim.ResetTrigger("startJump"); // Bersihkan antrean trigger lama
+                StartCoroutine(LandSequence());
+            }
+        }
+    }
+
+    IEnumerator LandSequence()
+    {
+        anim.SetTrigger("endJump"); // Mainkan jumpEnd
+        
+        canMove = false; // Kunci lari saat mendarat
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+        yield return new WaitForSeconds(landRecoveryTime);
+        
+        canMove = true; // Bisa jalan lagi
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
     }
 }
