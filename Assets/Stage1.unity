@@ -1417,7 +1417,7 @@ MonoBehaviour:
   daftarPintu:
   - idPintu: S2_KE_S1_ATAS
     lokasi: {fileID: 302956500}
-  - idPintu: S2_KE_S1_ATAS
+  - idPintu: S2_KE_S1_BAWAH
     lokasi: {fileID: 1393004901}
   player: {fileID: 674802617}
 --- !u!4 &1306075090
