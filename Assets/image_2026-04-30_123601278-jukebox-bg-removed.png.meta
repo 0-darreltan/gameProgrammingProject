@@ -470,28 +470,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image_2026-04-30_123601278-jukebox-bg-removed_29
-      rect:
-        serializedVersion: 2
-        x: 645
-        y: 503
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e046d42a69c354e0800000000000000
-      internalID: -1994028752273260315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: image_2026-04-30_123601278-jukebox-bg-removed_31
       rect:
         serializedVersion: 2
@@ -1049,9 +1027,9 @@ TextureImporter:
         y: 162
         width: 85
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.28005946, y: 0.51027185}
+      border: {x: 0, y: 0, z: 17, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -1071,9 +1049,9 @@ TextureImporter:
         y: 162
         width: 94
         height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.2613415, y: 0.52540094}
+      border: {x: 0, y: 0, z: 31, w: 0}
       customData: 
       outline: []
       physicsShape: []

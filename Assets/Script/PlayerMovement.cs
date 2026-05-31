@@ -3,108 +3,115 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Settings Gerakan")]
+    [Header("Gerakan & Lompat")]
     public float moveSpeed = 8f;
     public float jumpForce = 12f;
+    public float jumpStartDelay = 0.1f;
+    public float landRecoveryTime = 0.15f;
 
-    [Header("Timing (Anticipation & Recovery)")]
-    public float jumpStartDelay = 0.15f; // Jeda jumpStart (jongkok)
-    public float landRecoveryTime = 0.2f; // Jeda jumpEnd (mendarat)
+    [Header("Shooting")]
+    public GameObject bulletPrefab; // Tarik prefab peluru ke sini
+    public Transform firePoint;     // Tarik objek FirePoint ke sini
 
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
     private Animator anim;
-    
     private float moveInput;
     private bool isGrounded;
-    private bool canMove = true; 
+    private bool canMove = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // 1. Jika sedang ancang-ancang atau mendarat, kunci gerakan
-        if (!canMove) 
-        {
-            moveInput = 0;
+        if (!canMove) { 
+            moveInput = 0; 
             anim.SetBool("isWalking", false);
             return; 
         }
 
-        // 2. Ambil Input Jalan
+        // 1. Input Gerakan
         moveInput = Input.GetAxisRaw("Horizontal");
-
-        // 3. Atur Animasi Jalan & Flip
         anim.SetBool("isWalking", moveInput != 0);
-        
-        if (moveInput > 0) spriteRenderer.flipX = false;
-        else if (moveInput < 0) spriteRenderer.flipX = true;
 
-        // 4. Input Lompat
+        // 2. Membalik Arah (Flip)
+        // Kita pakai localScale supaya FirePoint ikut berputar arahnya
+        if (moveInput > 0) transform.localScale = new Vector3(0.1533f, 0.1557f, 1);
+        else if (moveInput < 0) transform.localScale = new Vector3(-0.1533f, 0.1557f, 1);
+
+        // 3. Input Lompat
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             StartCoroutine(JumpSequence());
         }
 
-        // 5. Update Parameter Animator
+        // 4. Input Menembak
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            anim.SetTrigger("shootTrigger"); // Pastikan nama trigger di Animator sama
+            Shoot();
+            StartCoroutine(LockMovementForShooting()); 
+        }
+
+        // 5. Update Animasi Fisika
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
+    IEnumerator LockMovementForShooting()
+    {
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
+        yield return new WaitForSeconds(0.3f); // Sesuaikan dengan durasi animasi shooting
+        canMove = true;
+    }
+
     void FixedUpdate()
     {
-        // Gerakkan karakter hanya jika canMove = true
         if (canMove)
         {
             rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
         }
     }
 
-    // --- PROSES LOMPAT (Antisipasi) ---
-    IEnumerator JumpSequence()
+    void Shoot()
     {
-        canMove = false; 
-        rb.linearVelocity = Vector2.zero; // Berhenti total saat jongkok
-        
-        anim.SetTrigger("startJump"); // Mainkan jumpStart
-        
-        yield return new WaitForSeconds(jumpStartDelay);
-        
-        // Meluncur ke atas
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        canMove = true; 
+        // Munculkan peluru di posisi FirePoint
+        if(bulletPrefab != null && firePoint != null)
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 
-    // --- DETEKSI MENDARAT ---
+    IEnumerator JumpSequence()
+    {
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
+        anim.SetTrigger("startJump");
+        yield return new WaitForSeconds(jumpStartDelay);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        canMove = true;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Pastikan objek lantai di-tag "Ground"
         if (collision.gameObject.CompareTag("Ground"))
         {
-            if (!isGrounded) // Hanya panggil saat baru saja mendarat
-            {
-                isGrounded = true;
-                anim.ResetTrigger("startJump"); // Bersihkan antrean trigger lama
-                StartCoroutine(LandSequence());
-            }
+            isGrounded = true;
+            anim.SetTrigger("endJump");
+            StartCoroutine(LandSequence());
         }
     }
 
     IEnumerator LandSequence()
     {
-        anim.SetTrigger("endJump"); // Mainkan jumpEnd
-        
-        canMove = false; // Kunci lari saat mendarat
+        canMove = false;
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-
         yield return new WaitForSeconds(landRecoveryTime);
-        
-        canMove = true; // Bisa jalan lagi
+        canMove = true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
