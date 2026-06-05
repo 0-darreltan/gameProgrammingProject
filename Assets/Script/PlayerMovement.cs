@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 12f;
     public float jumpStartDelay = 0.1f;
     public float landRecoveryTime = 0.15f;
+    public bool hasGun = false;
 
     [Header("Shooting")]
     public GameObject bulletPrefab; // Tarik prefab peluru ke sini
@@ -27,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        if (Time.timeScale == 0) return;
+
         if (!canMove) { 
             moveInput = 0; 
             anim.SetBool("isWalking", false);
@@ -49,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // 4. Input Menembak
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) && hasGun)
         {
             anim.SetTrigger("shootTrigger"); // Pastikan nama trigger di Animator sama
             Shoot();
