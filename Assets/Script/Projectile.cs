@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 30f;
     public int damage = 1;
     public float lifeTime = 2f; // Peluru hilang setelah 2 detik jika tidak kena apa-apa
 
@@ -11,11 +11,24 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        // Memberi kecepatan pada peluru saat muncul
-        rb.linearVelocity = transform.right * speed;
         
-        // Hancurkan otomatis setelah beberapa detik agar tidak memenuhi memori
-        Destroy(gameObject, lifeTime);
+        // Kita cari objek Player di dalam game
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            // Ambil angka Scale X dari Player (1 atau -1)
+            float direction = player.transform.localScale.x;
+            
+            // Kalikan kecepatan dengan arah hadap (positif ke kanan, negatif ke kiri)
+            rb.linearVelocity = new Vector2(direction * speed, 0);
+
+            // Putar gambar peluru agar menghadap ke kiri jika perlu
+            if (direction < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
