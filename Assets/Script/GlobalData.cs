@@ -1,9 +1,11 @@
+using System.Collections.Generic;
+
 public static class GlobalData
 {
     public static string LastDoorID = "MulaiGame"; 
-
-    // --- DATA INVENTORY ---
     public static bool punyaPistol = false;
-    public static bool punyaKunci = false;
-    public static bool punyaSepatuPebas = false;
+
+    // --- DATA MUSUH YANG SUDAH MATI ---
+    // Kita simpan nama/ID musuh di sini
+    public static List<string> daftarMusuhMati = new List<string>();
 }

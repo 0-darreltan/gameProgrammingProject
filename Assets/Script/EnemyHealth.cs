@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -6,67 +7,104 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 10;
     private int currentHealth;
 
-    [Header("Opsi Kematian")]
-    public bool hancurSaatMati = true; // TOGGLE: Centang jika musuh bisa mati/hilang
-    public GameObject efekLedakanPrefab; // Tarik Prefab Ledakan ke sini
+    [Header("Identitas Unik (WAJIB ISI)")]
+    public string enemyID; 
+    public bool simpanStatusKematian = true; 
 
-    [Header("UI")]
-    public GameObject damagePopupPrefab; 
+    [Header("Opsi Kematian")]
+    public bool hancurSaatMati = true; 
+    public GameObject efekLedakanPrefab;
+
+    [Header("UI Damage")]
+    public GameObject damagePopupPrefab; // Tarik Prefab DamageCanvas ke sini
     private DamagePopup currentPopup;
 
     private bool isDead = false;
 
     void Start()
     {
+        // CEK APAKAH MUSUH INI SUDAH PERNAH MATI?
+        if (simpanStatusKematian && !string.IsNullOrEmpty(enemyID) && GlobalData.daftarMusuhMati.Contains(enemyID))
+        {
+            if (hancurSaatMati)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                SetSebagaiBangkai();
+            }
+            return;
+        }
+
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(int amount)
     {
         if (isDead) return;
-
         currentHealth -= amount;
 
-        // Munculkan angka damage
-        Vector3 spawnPos = transform.position + Vector3.up * 0.5f;
-        if (currentPopup == null)
+        // --- BAGIAN INI YANG TADI HILANG (LOGIKA DAMAGE POPUP) ---
+        if (damagePopupPrefab != null)
         {
-            GameObject go = Instantiate(damagePopupPrefab, spawnPos, Quaternion.identity);
-            currentPopup = go.GetComponent<DamagePopup>();
-            currentPopup.Setup(amount, spawnPos);
-        }
-        else
-        {
-            currentPopup.AddDamage(amount, spawnPos);
-        }
+            // Tambahkan -1f pada sumbu Z agar angka muncul di DEPAN gambar map
+            Vector3 spawnPos = transform.position + new Vector3(0, 1.2f, -1f);
 
-        // Cek jika darah habis
-        if (currentHealth <= 0)
-        {
-            Die();
+            if (currentPopup == null)
+            {
+                GameObject go = Instantiate(damagePopupPrefab, spawnPos, Quaternion.identity);
+                currentPopup = go.GetComponent<DamagePopup>();
+                if (currentPopup != null) currentPopup.Setup(amount, spawnPos);
+            }
+            else
+            {
+                currentPopup.AddDamage(amount, spawnPos);
+            }
         }
+        // -------------------------------------------------------
+
+        if (currentHealth <= 0) Die();
     }
 
     void Die()
     {
-        // 1. Munculkan ledakan jika prefab sudah dimasukkan
-        if (efekLedakanPrefab != null)
+        isDead = true;
+
+        if (simpanStatusKematian && !string.IsNullOrEmpty(enemyID))
         {
-            Instantiate(efekLedakanPrefab, transform.position, Quaternion.identity);
+            if (!GlobalData.daftarMusuhMati.Contains(enemyID))
+            {
+                GlobalData.daftarMusuhMati.Add(enemyID);
+            }
         }
 
-        // 2. Cek apakah musuh ini boleh dihancurkan (Toggle)
+        if (efekLedakanPrefab != null) Instantiate(efekLedakanPrefab, transform.position, Quaternion.identity);
+
         if (hancurSaatMati)
         {
             Destroy(gameObject);
         }
         else
         {
-            // Jika tidak boleh hancur, kita buat dia "mati" secara logika saja
-            isDead = true;
-            Debug.Log(gameObject.name + " sudah 0 HP tapi tetap di tempat.");
-
-            GetComponent<Collider2D>().enabled = false;
+            SetSebagaiBangkai();
         }
     }
+
+    void SetSebagaiBangkai()
+    {
+        isDead = true;
+        this.enabled = false; 
+        if (GetComponent<MiniBossCombat>() != null) GetComponent<MiniBossCombat>().enabled = false;
+        
+        Collider2D[] cols = GetComponents<Collider2D>();
+        foreach (Collider2D c in cols) c.enabled = false;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null) rb.bodyType = RigidbodyType2D.Static;
+
+        GetComponent<SpriteRenderer>().color = Color.gray;
+    }
+    
+    public int GetCurrentHealth() { return currentHealth; }
 }

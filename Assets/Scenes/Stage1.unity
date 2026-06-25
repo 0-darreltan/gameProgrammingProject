@@ -1920,6 +1920,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 2147483647
+  enemyID: dummy
+  simpanStatusKematian: 1
   hancurSaatMati: 0
   efekLedakanPrefab: {fileID: 2499547240292758250, guid: 75dcaaccce61da34d8dc7d0981e3ff56, type: 3}
   damagePopupPrefab: {fileID: 1443248989577819144, guid: b5a6487a44049b94c9dea256f5033fd8, type: 3}
