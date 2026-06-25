@@ -1052,6 +1052,7 @@ GameObject:
   - component: {fileID: 674802618}
   - component: {fileID: 674802623}
   - component: {fileID: 674802622}
+  - component: {fileID: 674802624}
   m_Layer: 0
   m_Name: image_2026-04-30_123601278-jukebox-bg-removed_31
   m_TagString: Player
@@ -1248,6 +1249,21 @@ MonoBehaviour:
   hasGun: 0
   bulletPrefab: {fileID: 8694716946484147160, guid: cc9870187989ed343897a0422a3c4985, type: 3}
   firePoint: {fileID: 1401602354}
+--- !u!114 &674802624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674802617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45b1981ffb0cce4ebc6652a9fab48f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 3
+  iFramesDuration: 2
+  numberOfFlashes: 5
 --- !u!1 &692816603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1779,7 @@ GameObject:
   - component: {fileID: 1263552071}
   - component: {fileID: 1263552070}
   - component: {fileID: 1263552073}
+  - component: {fileID: 1263552074}
   m_Layer: 0
   m_Name: image_2026-05-31_163902538-jukebox-bg-removed_2
   m_TagString: Enemy
@@ -1904,6 +1921,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 2147483647
   damagePopupPrefab: {fileID: 1443248989577819144, guid: b5a6487a44049b94c9dea256f5033fd8, type: 3}
+--- !u!114 &1263552074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263552069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeac0ee66e5e66c40a0ad274cc71ebae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTouchDamage
+  damageAmount: 1
 --- !u!1 &1306075088
 GameObject:
   m_ObjectHideFlags: 0
