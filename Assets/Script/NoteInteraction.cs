@@ -2,25 +2,25 @@ using UnityEngine;
 
 public class NoteInteraction : MonoBehaviour
 {
-    public GameObject notepadUI;    // Tarik 'NotepadUI' ke sini
-    public GameObject hintF;        // Tarik 'TombolHint' (anak player) ke sini
-    
+    [Header("Referensi UI")]
+    public GameObject notepadUI;    // Gambar catatan besar di layar
+    public GameObject Hint_Icon;    // Segitiga/Icon di atas kepala player
+
     private bool isPlayerNearby = false;
     private bool isReading = false;
 
     void Start()
     {
-        // This ensures the notepad is hidden when the game first loads
-        if (notepadUI != null)
-        {
-            notepadUI.SetActive(false);
-        }
+        // Pastikan semua tertutup saat awal game
+        if (notepadUI != null) notepadUI.SetActive(false);
+        if (Hint_Icon != null) Hint_Icon.SetActive(false);
     }
+
     void Update()
     {
         if (isPlayerNearby)
         {
-            // Jika tekan F
+            // Jika menekan tombol F
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isReading)
@@ -38,39 +38,48 @@ public class NoteInteraction : MonoBehaviour
     void BukaCatatan()
     {
         isReading = true;
-        notepadUI.SetActive(true);
-        hintF.SetActive(false); // Sembunyikan huruf F saat membaca
-        Time.timeScale = 0f;    // Freeze game agar fokus membaca
+        if (notepadUI != null) notepadUI.SetActive(true);
+        if (Hint_Icon != null) Hint_Icon.SetActive(false); // Sembunyikan ikon saat baca
+        
+        Time.timeScale = 0f; // Freeze game
+        
+        // Munculkan kursor agar bisa klik (jika ada tombol close di notepad)
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
-    void TutupCatatan()
+    public void TutupCatatan()
     {
         isReading = false;
-        notepadUI.SetActive(false);
-        hintF.SetActive(true);  // Munculkan lagi huruf F
-        Time.timeScale = 1f;    // Jalan lagi gamenya
+        if (notepadUI != null) notepadUI.SetActive(false);
+        if (Hint_Icon != null) Hint_Icon.SetActive(true); // Munculkan kembali ikon F
+        
+        Time.timeScale = 1f; // Jalan lagi
+        
+        // Sembunyikan kursor lagi (opsional)
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Deteksi masuk area
+    // Deteksi Player Masuk Area
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = true;
-            hintF.SetActive(true); // Munculkan huruf F di atas kepala
+            if (Hint_Icon != null) Hint_Icon.SetActive(true); 
         }
     }
 
-    // Deteksi keluar area
+    // Deteksi Player Keluar Area
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = false;
-            isReading = false;
-            hintF.SetActive(false); // Hilangkan huruf F
-            notepadUI.SetActive(false);
-            Time.timeScale = 1f;
+            if (isReading) TutupCatatan(); // Otomatis tutup jika jalan menjauh
+            
+            if (Hint_Icon != null) Hint_Icon.SetActive(false);
         }
     }
 }
