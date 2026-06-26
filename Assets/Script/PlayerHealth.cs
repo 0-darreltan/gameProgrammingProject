@@ -62,6 +62,15 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = false;
     }
 
+    void Update()
+    {
+        // Kematian otomatis jika jatuh dari map (misalnya Y kurang dari -15)
+        if (transform.position.y < -15f && !isDead)
+        {
+            Die();
+        }
+    }
+
     void Die()
     {
         isDead = true;
@@ -72,11 +81,39 @@ public class PlayerHealth : MonoBehaviour
         // Pastikan saat mati warna kembali normal
         spriteRend.color = new Color(1, 1, 1, 1f);
 
-        Invoke("RestartLevel", 2f);
+        Invoke("TriggerGameOver", 2f); // Tunggu animasi mati selesai sebelum Game Over
     }
 
-    void RestartLevel()
+    void TriggerGameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        var gameOver = FindObjectOfType<GameOverManager>();
+        if (gameOver != null) 
+        {
+            gameOver.ShowGameOver();
+        }
+        else 
+        {
+            // Fallback jika tidak ada UI Game Over
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
+    public void Respawn()
+    {
+        isDead = false;
+        currentHealth = maxHealth;
+        
+        // Reset animasi
+        anim.Rebind();
+        anim.Update(0f);
+        
+        var pm = GetComponent<PlayerMovement>();
+        pm.enabled = true;
+        
+        // Teleport ke posisi aman terakhir
+        transform.position = pm.lastSafePosition;
+        
+        // Berikan waktu kebal agar tidak mati berulang jika spawn dekat musuh
+        StartCoroutine(InvincibilityRoutine());
     }
 }

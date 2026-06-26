@@ -13,7 +13,7 @@ public class IntroCutscene : MonoBehaviour
 
     [Header("Cutscene Settings")]
     public string nextSceneName = "Tutorial1";
-    public float typeSpeed = 0.04f;
+    public float typeSpeed = 0.08f;
     public float paragraphPause = 2f;
     public bool autoCreateFallbackUI = true;
 

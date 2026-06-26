@@ -20,10 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private bool canMove = true;
 
+    [HideInInspector] public Vector2 lastSafePosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        lastSafePosition = transform.position; // Set posisi awal sebagai tempat aman
     }
 
     void Update()
@@ -107,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             anim.SetTrigger("endJump");
             StartCoroutine(LandSequence());
+            lastSafePosition = transform.position; // Simpan posisi aman terakhir
         }
     }
 
