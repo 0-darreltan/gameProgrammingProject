@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5783a5cb67f844713aa96fd4e65c3716
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cutscenePanel: {instanceID: 0}
+  - titleText: {instanceID: 0}
+  - contentText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

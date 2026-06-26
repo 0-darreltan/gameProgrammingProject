@@ -4,12 +4,18 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject optionsPanel; // Taruh objek Panel Options di sini nanti jika ada
+    public IntroCutscene introCutscene; // Tarik objek dengan skrip IntroCutscene jika menggunakan cutscene
+
+    private void Awake()
+    {
+        // Awake bisa dibiarkan kosong atau dihapus, karena referensi introCutscene tidak lagi dibutuhkan di MainMenu
+    }
 
     // 1. FUNGSI UNTUK TOMBOL START
     public void StartGame()
     {
-        // Langsung memuat scene Tutorial1 seperti yang diinginkan
-        SceneManager.LoadScene("Tutorial1");
+        Debug.Log("MainMenu: Memuat scene CutScene.");
+        SceneManager.LoadScene("CutScene");
     }
 
     // 2. FUNGSI UNTUK TOMBOL OPTIONS

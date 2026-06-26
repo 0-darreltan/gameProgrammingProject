@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0018072, y: 0.000015259}
-  m_SizeDelta: {x: 2375.6, y: 1080}
+  m_AnchoredPosition: {x: -0.0077671, y: 0.000030518}
+  m_SizeDelta: {x: 1966.4, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21763425
 MonoBehaviour:
@@ -683,7 +683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.85, y: -188}
+  m_AnchoredPosition: {x: 4.85, y: -190}
   m_SizeDelta: {x: 557.864, y: 86.332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148830053
@@ -815,7 +815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.85, y: -72.249}
+  m_AnchoredPosition: {x: 4.85, y: -74}
   m_SizeDelta: {x: 557.864, y: 86.332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207872900
@@ -942,6 +942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   optionsPanel: {fileID: 0}
+  introCutscene: {fileID: 0}
 --- !u!4 &1728863060
 Transform:
   m_ObjectHideFlags: 0
