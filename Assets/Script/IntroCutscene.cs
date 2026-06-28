@@ -21,18 +21,18 @@ public class IntroCutscene : MonoBehaviour
     public string[] paragraphs = new string[]
     {
         "THE ARCHIVE",
-        "Ketika waktu berhenti, hanya mereka yang berani bergerak yang masih hidup.",
-        "Langit dunia tidak runtuh melainkan membeku dengan segala makhluk yang ada di muka bumi.",
-        "Laut berhenti di tengah ombaknya. Angin mati sebelum sampai ke mana pun.",
-        "Seluruh isi dunia (manusia, hewan, pohon) berhenti dalam posisi terakhir mereka, seperti foto raksasa yang tidak pernah bergerak lagi.",
-        "Penyebab dari semua ini berada di menara bernama The Archive yang merupakan menara tua raksasa yang menjulang di tengah kota.",
-        "Di puncak menara tersimpan The Heart of Time yaitu mesin kuno yang selama ribuan tahun menjaga dunia tetap berjalan.",
-        "Ketika mesin itu berhenti, waktu pun ikut berhenti. Tidak ada yang tahu siapa yang menonaktifkan menara tersebut.",
-        "Tidak ada yang tahu penyebabnya. Dan hampir tidak ada yang tersisa untuk bertanya.",
-        "Dalang dibalik berhentinya mesin kuno ialah Administrator. Ia bukan penjahat namun orang yang melihat terlalu banyak hal buruk sampai lupa cara melihat sudut pandang lain.",
-        "Sable bukan pahlawan, ia hanya satu-satunya yang tidak membeku dengan rasa ingin tahu yang lebih besar dari rasa takutnya.",
-        "Mirra bukanlah pejuang, ia hanya kakak yang tidak mau menyerah.",
-        "The Archive masih berdiri yang menyimpan lebih banyak pertanyaan dari jawaban, menunggu siapapun berikutnya yang cukup penasaran untuk masuk."
+        "When time stopped, only those who dared to move remained alive.",
+        "The world's sky did not collapse, but froze along with all living creatures on the face of the earth.",
+        "The ocean stopped in the middle of its waves. The wind died before reaching anywhere.",
+        "Every single thing (people, animals, trees) froze in their last position, like a giant photo that would never move again.",
+        "The cause of all this was in a tower named The Archive, a giant old tower towering in the middle of the city.",
+        "At the top of the tower was kept The Heart of Time, an ancient machine that had kept the world running for thousands of years.",
+        "When the machine stopped, time stopped too. No one knew who turned off the tower.",
+        "No one knew the cause. And almost no one was left to ask.",
+        "The mastermind behind the stopping of the ancient machine was Administrator. He wasn't a villain, but someone who had seen too many bad things and forgot how to see other perspectives.",
+        "Sable wasn't a hero, just the only one who didn't freeze, driven by curiosity stronger than fear.",
+        "Mirra wasn't a warrior, just a sister who refused to give up.",
+        "The Archive still stood, holding more questions than answers, waiting for the next curious soul to enter."
     };
 
     private void Awake()
