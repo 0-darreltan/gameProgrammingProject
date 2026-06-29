@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 50fffe7f721fcf14cb540b3f9f38ba9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -290893361093227843
+    second: transparent_3_death_0
+  - first:
+      213: -3064133718339085620
+    second: transparent_3_death_1
+  - first:
+      213: 8031059292644527685
+    second: transparent_3_death_2
+  - first:
+      213: -7830418801626503464
+    second: transparent_3_death_3
+  - first:
+      213: 2657581126433728975
+    second: transparent_3_death_4
+  - first:
+      213: -6409304340340868397
+    second: transparent_3_death_5
+  - first:
+      213: 1641079783050829281
+    second: transparent_3_death_6
+  - first:
+      213: 8124008892820113262
+    second: transparent_3_death_7
+  - first:
+      213: 6336079905122046910
+    second: transparent_3_death_8
+  - first:
+      213: -4573186031959290054
+    second: transparent_3_death_9
+  - first:
+      213: 1563119004201784092
+    second: transparent_3_death_10
+  - first:
+      213: 4133575148699162599
+    second: transparent_3_death_11
+  - first:
+      213: -475249493494700405
+    second: transparent_3_death_12
+  - first:
+      213: 5696348295639548148
+    second: transparent_3_death_13
+  - first:
+      213: 2991315616939473414
+    second: transparent_3_death_14
+  - first:
+      213: -1535357426965333713
+    second: transparent_3_death_15
+  - first:
+      213: -5167420346695747384
+    second: transparent_3_death_16
+  - first:
+      213: -1600198883173736559
+    second: transparent_3_death_17
+  - first:
+      213: 265413330292380704
+    second: transparent_3_death_18
+  - first:
+      213: -7511244161140636368
+    second: transparent_3_death_19
+  - first:
+      213: 3516544090922017105
+    second: transparent_3_death_20
+  - first:
+      213: 866511286462118301
+    second: transparent_3_death_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: transparent_3_death_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 95
+        width: 101
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbac480870a86fbf0800000000000000
+      internalID: -290893361093227843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent_3_death_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 97
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca1a1e1e920a75d0800000000000000
+      internalID: -3064133718339085620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent_3_death_7
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 93
+        width: 119
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6748a09b074eb070800000000000000
+      internalID: 8124008892820113262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent_3_death_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 97
+        width: 103
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c131c1bd37051b510800000000000000
+      internalID: 1563119004201784092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent_3_death_15
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 104
+        width: 88
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29397a0e8051bae0800000000000000
+      internalID: -1535357426965333713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent_3_death_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 96
+        width: 105
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fd37e0893fac9e0800000000000000
+      internalID: -1600198883173736559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5817ed8a96d01944c8a452778e993aad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      transparent_3_death_0: -290893361093227843
+      transparent_3_death_1: -3064133718339085620
+      transparent_3_death_10: 1563119004201784092
+      transparent_3_death_11: 4133575148699162599
+      transparent_3_death_12: -475249493494700405
+      transparent_3_death_13: 5696348295639548148
+      transparent_3_death_14: 2991315616939473414
+      transparent_3_death_15: -1535357426965333713
+      transparent_3_death_16: -5167420346695747384
+      transparent_3_death_17: -1600198883173736559
+      transparent_3_death_18: 265413330292380704
+      transparent_3_death_19: -7511244161140636368
+      transparent_3_death_2: 8031059292644527685
+      transparent_3_death_20: 3516544090922017105
+      transparent_3_death_21: 866511286462118301
+      transparent_3_death_3: -7830418801626503464
+      transparent_3_death_4: 2657581126433728975
+      transparent_3_death_5: -6409304340340868397
+      transparent_3_death_6: 1641079783050829281
+      transparent_3_death_7: 8124008892820113262
+      transparent_3_death_8: 6336079905122046910
+      transparent_3_death_9: -4573186031959290054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
