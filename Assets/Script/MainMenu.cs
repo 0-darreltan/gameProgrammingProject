@@ -31,19 +31,14 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    // Fungsi tambahan untuk menutup Options (jika ada tombol 'Back' di menu options)
-    public void CloseOptions()
-    {
-        if (optionsPanel != null)
-        {
-            optionsPanel.SetActive(false);
-        }
-    }
-
     // 3. FUNGSI UNTUK TOMBOL EXIT
     public void ExitGame()
     {
         Debug.Log("Game Keluar!");
         Application.Quit(); // Menutup game (berfungsi setelah game di-build)
+
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }
