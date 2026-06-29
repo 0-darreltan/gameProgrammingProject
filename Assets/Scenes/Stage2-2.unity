@@ -817,11 +817,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniBossCombat
   missilePrefab: {fileID: 3516964536713163454, guid: 49e036ce3961df84eadf3bdc17a55484, type: 3}
-  normalFireRate: 4
+  normalFireRate: 3
   enragedFireRate: 1
-  minYOffset: -0.62
+  minYOffset: -1.5
   maxYOffset: 1
-  spawnXOffset: -3
+  spawnXOffset: -3.6
 --- !u!1 &1145662310
 GameObject:
   m_ObjectHideFlags: 0
