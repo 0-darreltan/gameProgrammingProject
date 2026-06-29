@@ -148,6 +148,7 @@ public class EnemyAI : MonoBehaviour
         Debug.Log("Enemy menabrak : " + collision.gameObject.name);
     }
 
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
