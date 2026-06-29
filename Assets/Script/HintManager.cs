@@ -18,10 +18,10 @@ public class HintManager : MonoBehaviour
     [TextArea(2, 5)]
     public string[] stageHints = new string[]
     {
-        "[Transmisi Masuk]\nPastikan kamu memeriksa setiap ruangan dengan teliti. Terkadang jalan keluar tidak terlihat di pandangan pertama.",
-        "[Transmisi Masuk]\nJika kamu melihat panel berkedip, itu mungkin membutuhkan kode akses dari sebuah petunjuk tersembunyi.",
-        "[Transmisi Masuk]\nHati-hati. Ada entitas di lantai ini. Jangan terlalu lama berdiri di area yang gelap.",
-        "[Transmisi Masuk]\nIngat, kamu tidak bisa bertarung. Bersembunyi adalah satu-satunya pilihan rasional."
+        "[Incoming Transmission]\nMake sure you check every room carefully. Sometimes the way out is not visible at first glance.",
+        "[Incoming Transmission]\nIf you see a flashing panel, it might require an access code from a hidden clue.",
+        "[Incoming Transmission]\nBe careful. There is an entity on this floor. Don't stand in the dark area for too long.",
+        "[Incoming Transmission]\nRemember, you can't fight. Hiding is the only rational option."
     };
 
     [Header("Testing Tool")]
@@ -32,26 +32,60 @@ public class HintManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip beepSound;
 
+    [Header("Stage Settings")]
+    [Tooltip("Centang ini jika HintManager dipasang di Stage 1. HILANGKAN centang jika dipasang di Stage 2.")]
+    public bool isStage1 = true;
+
     [Header("Typewriter Settings")]
     public float typeSpeed = 0.03f;
+
+    // Memori sementara untuk Stage 2 (reset saat game ditutup)
+    public static bool hasPlayedStage2Hints = false;
 
     private int currentHintIndex = 0;
 
     private void Start()
     {
         Debug.Log("HintManager: Start called. Memeriksa komponen...");
+
+        // CEK APAKAH SUDAH PERNAH DIMAINKAN SEBELUMNYA (HANYA UNTUK STAGE 1)
+        if (isStage1 && WelcomeStoryManager.hasPlayedStage1)
+        {
+            Debug.Log("HintManager: Stage 1 sudah pernah diselesaikan sebelumnya. Menghentikan HintManager secara permanen untuk sesi ini.");
+            if (hintPanel != null) hintPanel.SetActive(false);
+            return; // Gagalkan seluruh proses Start
+        }
+
+        // CEK APAKAH SUDAH PERNAH DIMAINKAN SEBELUMNYA (UNTUK STAGE 2)
+        if (!isStage1 && hasPlayedStage2Hints)
+        {
+            Debug.Log("HintManager: Stage 2 sudah pernah dimasuki sebelumnya. Mematikan hint.");
+            if (hintPanel != null) hintPanel.SetActive(false);
+            return; 
+        }
         
         // PAKSA PENGISIAN DARI KODE (Mengabaikan Inspector yang kosong)
         if (stageHints == null || stageHints.Length == 0 || string.IsNullOrWhiteSpace(stageHints[0]))
         {
-            stageHints = new string[]
+            if (isStage1)
             {
-                "[Administrator]\nPastikan kamu memeriksa setiap ruangan dengan teliti. Terkadang jalan keluar tidak terlihat di pandangan pertama.",
-                "[-]\nJika kamu melihat panel berkedip, itu mungkin membutuhkan kode akses dari sebuah petunjuk tersembunyi.",
-                "[Vos]\nEmpat orang, empat tanggal penting. Cari di tempat mereka biasa menyembunyikan sesuatu. Angka-angka itu adalah kuncinya.",
-                "[Mirra]\nIngat, kamu tidak bisa bertarung. Bersembunyi adalah satu-satunya pilihan rasional."
-            };
-            Debug.Log("HintManager: Mengisi data teks secara otomatis dari dalam kode karena di Inspector kosong!");
+                stageHints = new string[]
+                {
+                    "[Administrator]\nMake sure you check every room carefully. Sometimes the way out is not visible at first glance.",
+                    "[-]\nIf you see a flashing panel, it might require an access code from a hidden clue.",
+                    "[Vos]\nFour people, four important dates. Look for where they usually hide things. Those numbers are the key.",
+                    "[Mirra]\nRemember, you can't fight. Hiding is the only rational option."
+                };
+            }
+            else // JIKA INI ADALAH STAGE 2
+            {
+                stageHints = new string[]
+                {
+                    "[Unknown Transmission]\nThe vibration on this floor is not normal... There is a 'steel shadow' sleeping soundly in the hallway ahead.",
+                    "[Unknown Transmission]\nThat machine has no heart, but it is programmed to detect your heartbeat. Step in silence..."
+                };
+            }
+            Debug.Log("HintManager: Mengisi data teks secara otomatis berdasarkan pengaturan Stage!");
         }
 
         // Pastikan panel tersembunyi saat game dimulai
@@ -146,6 +180,12 @@ public class HintManager : MonoBehaviour
             currentHintIndex++;
         }
         
+        // Tandai bahwa hint di Stage 2 sudah pernah dimainkan agar tidak muncul lagi saat kembali
+        if (!isStage1)
+        {
+            hasPlayedStage2Hints = true;
+        }
+
         Debug.Log("HintManager: Semua hint di stage ini sudah ditampilkan.");
     }
 }

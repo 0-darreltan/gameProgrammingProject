@@ -11,6 +11,9 @@ public class WelcomeStoryManager : MonoBehaviour
     public Button nextButton;
     public Button prevButton; // Tombol untuk mundur
 
+    // Variabel statis: akan di-reset saat game dimatikan, tapi tetap utuh saat pindah-pindah scene
+    public static bool hasPlayedStage1 = false;
+
     [Header("Player Settings")]
     [Tooltip("Masukkan objek Karakter (Player) ke sini agar disembunyikan selama cutscene.")]
     public GameObject playerCharacter;
@@ -40,6 +43,16 @@ public class WelcomeStoryManager : MonoBehaviour
 
     private void Start()
     {
+        // CEK APAKAH SUDAH PERNAH DIMAINKAN DI SESI GAME INI
+        if (hasPlayedStage1)
+        {
+            // Jika sudah, sembunyikan panel dan gagalkan seluruh proses cutscene
+            if (welcomePanel != null) welcomePanel.SetActive(false);
+            if (playerCharacter == null) playerCharacter = GameObject.FindGameObjectWithTag("Player");
+            if (playerCharacter != null) playerCharacter.SetActive(true);
+            return; // Hentikan fungsi Start di sini
+        }
+
         // Cari player secara otomatis jika kolom playerCharacter kosong
         if (playerCharacter == null)
         {
@@ -162,5 +175,8 @@ public class WelcomeStoryManager : MonoBehaviour
         }
 
         Time.timeScale = 1f;
+
+        // Tandai bahwa pemain sudah menyelesaikan Welcome Story di sesi ini
+        hasPlayedStage1 = true;
     }
 }
