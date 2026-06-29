@@ -147,7 +147,7 @@ public class IntroCutscene : MonoBehaviour
         titleText.alignment = TextAlignmentOptions.Center;
         titleText.fontSize = 48f;
         titleText.color = Color.white;
-        titleText.enableWordWrapping = true;
+        titleText.textWrappingMode = TextWrappingModes.Normal;
 
         var titleRect = titleObject.GetComponent<RectTransform>();
         titleRect.anchorMin = new Vector2(0.1f, 0.7f);
@@ -162,7 +162,7 @@ public class IntroCutscene : MonoBehaviour
         contentText.alignment = TextAlignmentOptions.TopLeft;
         contentText.fontSize = 28f;
         contentText.color = Color.white;
-        contentText.enableWordWrapping = true;
+        contentText.textWrappingMode = TextWrappingModes.Normal;
 
         var contentRect = contentObject.GetComponent<RectTransform>();
         contentRect.anchorMin = new Vector2(0.08f, 0.08f);
