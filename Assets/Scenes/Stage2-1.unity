@@ -1718,6 +1718,10 @@ GameObject:
   - component: {fileID: 1853297945}
   - component: {fileID: 1853297944}
   - component: {fileID: 1853297943}
+  - component: {fileID: 1853297952}
+  - component: {fileID: 1853297951}
+  - component: {fileID: 1853297950}
+  - component: {fileID: 1853297949}
   m_Layer: 0
   m_Name: Enemy_3
   m_TagString: Untagged
@@ -1751,7 +1755,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1853297944
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1782,12 +1786,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.59
+  m_Radius: 0.8
 --- !u!61 &1853297945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1924,12 +1928,75 @@ Transform:
   m_GameObject: {fileID: 1853297942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48896, y: 0.14974, z: 0}
+  m_LocalPosition: {x: 3.9, y: -1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853297949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853297942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b106d433e7dd3e479670687edede7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 15
+  enemyID: 
+  simpanStatusKematian: 0
+  hancurSaatMati: 1
+  efekLedakanPrefab: {fileID: 0}
+  damagePopupPrefab: {fileID: 0}
+--- !u!114 &1853297950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853297942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f39c896648d834b8ec5ee8ae35b576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+--- !u!114 &1853297951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853297942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20ab377d82c47c478395d41e1054227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  damageAmount: 4
+  attackCooldown: 2
+--- !u!114 &1853297952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853297942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a5c19090ae926479ec400952f35475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  player: {fileID: 0}
+  detectRange: 5
+  attackRange: 1.5
+  moveSpeed: 4
+  roamRadius: 3
+  minWaitTime: 1.5
+  maxWaitTime: 4
 --- !u!1 &1919356933
 GameObject:
   m_ObjectHideFlags: 0
