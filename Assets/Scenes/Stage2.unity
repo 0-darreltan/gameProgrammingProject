@@ -2841,6 +2841,7 @@ GameObject:
   - component: {fileID: 1517571269}
   - component: {fileID: 1517571268}
   - component: {fileID: 1517571267}
+  - component: {fileID: 1517571275}
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -2868,6 +2869,8 @@ MonoBehaviour:
   minWaitTime: 1.5
   maxWaitTime: 4
   jumpForce: 4
+  explosionRange: 1
+  explosionDamage: 10
 --- !u!61 &1517571268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2991,8 +2994,8 @@ MonoBehaviour:
   maxHealth: 10
   enemyID: Enemy_2
   simpanStatusKematian: 0
-  hancurSaatMati: 0
-  efekLedakanPrefab: {fileID: 0}
+  hancurSaatMati: 1
+  efekLedakanPrefab: {fileID: 2499547240292758250, guid: 75dcaaccce61da34d8dc7d0981e3ff56, type: 3}
   damagePopupPrefab: {fileID: 0}
 --- !u!212 &1517571273
 SpriteRenderer:
@@ -3068,6 +3071,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1517571275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517571266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b106d433e7dd3e479670687edede7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 10
+  enemyID: 
+  simpanStatusKematian: 0
+  hancurSaatMati: 1
+  efekLedakanPrefab: {fileID: 0}
+  damagePopupPrefab: {fileID: 0}
 --- !u!1 &1631780068
 GameObject:
   m_ObjectHideFlags: 0

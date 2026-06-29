@@ -84,7 +84,7 @@ public class EnemyAI : MonoBehaviour
         isWaiting = true;
     }
 
-    void Attack()
+    protected virtual void Attack()
     {
         
         anim.SetBool("isMoving", false);

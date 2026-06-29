@@ -2,31 +2,59 @@ using UnityEngine;
 
 public class JumperEnemy : EnemyAI
 {
-    [Header("Jump Settings")]
+    [Header("Jump & Explode Settings")]
     public float jumpForce = 5f;
-    private Rigidbody2D rb;
+    public float explosionRange = 1.0f;
+    public int explosionDamage = 10;
+    
     private bool isGrounded;
 
-    // Kita override (timpa) fungsi RoamBehavior untuk perilaku khusus
-   protected override void Start()
+    protected override void Start()
     {
-        base.Start(); // Memanggil Start dari EnemyAI
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
     }
 
-    // Tambahkan logika lompat saat berjalan
-    // Anda bisa memanggil ini di dalam Update atau saat musuh bergerak
+    // Fungsi untuk melompat
     public void PerformJump()
     {
         if (isGrounded)
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false; // Musuh tidak lagi di tanah setelah melompat
         }
+    }
+
+    // Mengganti fungsi Attack() dari EnemyAI dengan logika ledakan
+    // Catatan: Pastikan di EnemyAI fungsi Attack() ditulis 'protected virtual' 
+    // agar bisa di-override
+    protected override void Attack() 
+    {
+        Explode();
+    }
+
+    void Explode()
+    {
+        Debug.Log("JumperEnemy meledak!");
+        
+        // Cek apakah pemain ada di jangkauan ledakan
+        float distance = Vector2.Distance(transform.position, player.position);
+        if (distance <= explosionRange)
+        {
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(explosionDamage);
+            }
+        }
+
+        // Hancurkan musuh setelah meledak
+        Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) // Pastikan lantai Anda memiliki tag "Ground"
+        // Deteksi lantai untuk memungkinkan lompatan
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }
