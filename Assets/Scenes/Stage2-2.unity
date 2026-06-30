@@ -301,6 +301,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 419431007119479192, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 419431007119479192, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479806967883622473, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 448.8598
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479806967883622473, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 245.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479806967883622473, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 254.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479806967883622473, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -269.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926109149777283988, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926109149777283988, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265113491858989182, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583026777426495047, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 435.0594
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583026777426495047, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 245.4987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583026777426495047, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -252.86243
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583026777426495047, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -269.52118
+      objectReference: {fileID: 0}
     - target: {fileID: 7842691142547321572, guid: 887f6a0dc50b745cda085fab48903d97, type: 3}
       propertyPath: m_Name
       value: LevelSystems
@@ -1430,7 +1482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45b1981ffb0cce4ebc6652a9fab48f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 3
+  maxHealth: 20
   iFramesDuration: 2
   numberOfFlashes: 5
 --- !u!1 &1868456974

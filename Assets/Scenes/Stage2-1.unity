@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45b1981ffb0cce4ebc6652a9fab48f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 3
+  maxHealth: 20
   iFramesDuration: 2
   numberOfFlashes: 5
 --- !u!1 &261831335
@@ -611,6 +611,14 @@ PrefabInstance:
       value: 115.4417
       objectReference: {fileID: 0}
     - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -640,11 +648,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 231
+      value: 564
       objectReference: {fileID: 0}
     - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 313
+      value: 897
       objectReference: {fileID: 0}
     - target: {fileID: 7069165655756367268, guid: 163710c1974d446e7aadbb1768d60120, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1724,7 +1732,7 @@ GameObject:
   - component: {fileID: 1853297949}
   m_Layer: 0
   m_Name: Enemy_3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1950,8 +1958,8 @@ MonoBehaviour:
   enemyID: 
   simpanStatusKematian: 0
   hancurSaatMati: 1
-  efekLedakanPrefab: {fileID: 0}
-  damagePopupPrefab: {fileID: 0}
+  efekLedakanPrefab: {fileID: 2499547240292758250, guid: 75dcaaccce61da34d8dc7d0981e3ff56, type: 3}
+  damagePopupPrefab: {fileID: 1443248989577819144, guid: b5a6487a44049b94c9dea256f5033fd8, type: 3}
 --- !u!114 &1853297950
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2869,7 +2869,7 @@ MonoBehaviour:
   minWaitTime: 1.5
   maxWaitTime: 4
   jumpForce: 4
-  explosionRange: 1
+  explosionRange: 3
   explosionDamage: 10
 --- !u!61 &1517571268
 BoxCollider2D:
@@ -2994,9 +2994,9 @@ MonoBehaviour:
   maxHealth: 10
   enemyID: Enemy_2
   simpanStatusKematian: 0
-  hancurSaatMati: 1
+  hancurSaatMati: 0
   efekLedakanPrefab: {fileID: 2499547240292758250, guid: 75dcaaccce61da34d8dc7d0981e3ff56, type: 3}
-  damagePopupPrefab: {fileID: 0}
+  damagePopupPrefab: {fileID: 1443248989577819144, guid: b5a6487a44049b94c9dea256f5033fd8, type: 3}
 --- !u!212 &1517571273
 SpriteRenderer:
   serializedVersion: 2
@@ -3405,7 +3405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45b1981ffb0cce4ebc6652a9fab48f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 3
+  maxHealth: 20
   iFramesDuration: 2
   numberOfFlashes: 5
 --- !u!1 &1699573317
